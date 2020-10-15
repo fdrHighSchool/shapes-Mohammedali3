@@ -2,22 +2,30 @@ import java.until.*;
 
  public class Shapes{
    public static void main(String[] args){
-     square();
-     triangle();
+     //Square//
+     double Side  = 5.8;
 
-     public static void square(){
-       double Squareside = 10;
-       double ans = Squareside*Squareside;
-       system.out.println(ans);
+     //Triangle//
+     double TriB = 10.6;
+     double TriH = 4.5;
+     //double Half = 0.5;
 
+     //variables holding the values//
+     double Squ = square(Side);
+     double Tri = triangle(TriB*TriH*0.5);
 
-       public static void triangle(){
-         double H = 10;
-         double B = 9;
-         double Half = 0.5;
-         double ans2 = Half*B*H;
-          system.out.println(ans2);
-       }
-     }
+    //Print//
+     System.out.println(Squ);
+     System.out.println(Tri);
    }
+     public static double square(double s){
+       double Ans = s * s;
+       return Ans;
+     }
+
+       public static double triangle(double B, double H){
+         double Ans2 = B * H;
+         return Ans2;
+       }
+
  }
